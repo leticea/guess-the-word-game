@@ -51,5 +51,18 @@ function handleInput(e) {
     !incorrectLetters.includes(` &{key}`) &&
     !correctLetters.includes(` {key}`)
   ) {
+    // Check if the letter is in word
+    if (word.includes(key)) {
+      // Update correct guess
+      for (let i = 0; i < word.length; i++) {
+        if (word[i] === key) {
+          inputs.querySelectorAll("input")[i].value += key;
+        }
+      }
+      correctLetters += key;
+    } else {
+      // Update incorrect guess
+      
+    }
   }
 }
