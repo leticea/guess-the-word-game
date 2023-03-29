@@ -11,7 +11,15 @@
   <img alt="" src=".github/image.png">
 </p>
 
-## Guess the Word
+<p align="center">
+  <img alt="" src=".github/image2.png">
+</p>
+
+<p align="center">
+  <img alt="" src=".github/image3.png">
+</p>
+
+## Guess the Word Game
 
 ## 🚀 Tecnologias
 

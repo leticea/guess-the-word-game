@@ -71,7 +71,7 @@ function handleInput(e) {
   // Update remain guess and check for win lose conditions
   guessLeft.innerText = maxGuesses;
   if (correctLetters.length === word.length) {
-    alert(`Congrats! You Found the Word ${word.toUpperCase}`);
+    alert(`Congrats! You Found the Word ${word.toUpperCase()}`);
     startNewGame();
   } else if (maxGuesses < 1) {
     alert("Game Over! You Don't Have Remaining Guesses!");
