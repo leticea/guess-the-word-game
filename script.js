@@ -8,7 +8,10 @@ const inputs = document.querySelector(".word"),
   typeInput = document.querySelector(".type-input");
 
 // Initializing game variables
-let word, incorrectLetters = [], correctLetters = [], maxGuesses;
+let word,
+  incorrectLetters = [],
+  correctLetters = [],
+  maxGuesses;
 
 // Select random word from word list and set up game
 function startNewGame() {
@@ -18,5 +21,23 @@ function startNewGame() {
   hintElement.style.opacity = "0";
 
   // Choose random word from db and setup game
-  
+  const randomWord = wordList[Math.floor(Math.random() * wordList.length)];
+  word = randomWord;
+
+  // If word chars >= 5 then max guess = 8 else max guess = 6
+  maxGuesses = word.length >= 5 ? 8 : 6;
+  incorrectLetters = [];
+  correctLetters = [];
+  hintTag.innerText = randomWord.hint;
+  guessLeft.innerText = maxGuesses;
+  mistakes.innerText = incorrectLetters;
+
+  // Create input for each letter of word
+  inputs.innerHTML = "";
+  for (let i = 0; i < word.length; i++) {
+    const input = document.createElement("input");
+    input.type = "text";
+    input.disabled = true;
+    inputs.appendChild(input);
+  }
 }
