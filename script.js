@@ -76,7 +76,18 @@ function handleInput(e) {
   } else if (maxGuesses < 1) {
     alert("Game Over! You Don't Have Remaining Guesses!");
     for (let i = 0; i < word.length; i++) {
-      inputs.querySelectorAll("input")
+      // Fill inputs with correct words
+      inputs.querySelectorAll("input")[i].value = word[i];
     }
   }
+
+  typeInput.value = "";
 }
+
+// Show hint element
+function showHintElement() {
+  hintElement.style.display = "block";
+  hintElement.style.opacity = "1";
+}
+
+
