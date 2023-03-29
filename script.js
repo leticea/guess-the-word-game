@@ -62,7 +62,21 @@ function handleInput(e) {
       correctLetters += key;
     } else {
       // Update incorrect guess
-      
+      maxGuesses--;
+      incorrectLetters.push(` ${key}`);
+      mistakes.innerText = incorrectLetters;
+    }
+  }
+
+  // Update remain guess and check for win lose conditions
+  guessLeft.innerText = maxGuesses;
+  if (correctLetters.length === word.length) {
+    alert(`Congrats! You Found the Word ${word.toUpperCase}`);
+    startNewGame();
+  } else if (maxGuesses < 1) {
+    alert("Game Over! You Don't Have Remaining Guesses!");
+    for (let i = 0; i < word.length; i++) {
+      inputs.querySelectorAll("input")
     }
   }
 }
