@@ -90,4 +90,11 @@ function showHintElement() {
   hintElement.style.opacity = "1";
 }
 
+// Setup event listeners
+resetBtn.addEventListener("click", startNewGame);
+hintBtn.addEventListener("click", showHintElement);
+typeInput.addEventListener("input", handleInput);
+inputs.addEventListener("click", () => typeInput.focus());
+document.addEventListener("keydown", () => typeInput.focus());
 
+startNewGame();
