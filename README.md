@@ -11,7 +11,7 @@
   <img alt="" src=".github/image.png">
 </p>
 
-## Text Editor
+## Guess the Word
 
 ## 🚀 Tecnologias
 
@@ -23,9 +23,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projetinho de um editor de texto.
+Joguinho de adivinhar a palavra.
 
-Aula do canal [AsmrProg](https://www.youtube.com/watch?v=gRyvG7PZ4m0&t=64s)
+Aula do canal [AsmrProg](https://www.youtube.com/watch?v=9uEaNSiXJeQ)
 
 ## 🚀 Como Rodar
 
