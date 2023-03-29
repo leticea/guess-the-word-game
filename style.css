@@ -35,3 +35,9 @@ body {
 .wrapper .content {
   margin: 25px 25px 30px;
 }
+
+.content .word {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
