@@ -45,5 +45,11 @@ function startNewGame() {
 // Handle user input and update game stats
 function handleInput(e) {
   // Ignore non-letters input and letters that have already guessed
-
+  const key = e.target.value.toLowerCase();
+  if (
+    key.match(/^[a-z]+$/i) &&
+    !incorrectLetters.includes(` &{key}`) &&
+    !correctLetters.includes(` {key}`)
+  ) {
+  }
 }
