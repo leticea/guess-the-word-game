@@ -41,3 +41,9 @@ function startNewGame() {
     inputs.appendChild(input);
   }
 }
+
+// Handle user input and update game stats
+function handleInput(e) {
+  // Ignore non-letters input and letters that have already guessed
+
+}
